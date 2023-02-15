@@ -28,15 +28,40 @@ h1 {
     background-color: #1b1b32;
 }
 
+.ligth-section{
+    color: black;
+    background-color: white;
+
+}
+
 .title-section{
     font-size: 2rem;
     padding: 15px 0;
     font-family: 'Rubik Dirt', cursive;
 }
 
+.description-section{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
 .text-section{
     font-size: 1.2rem;
     
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.black-text{
+    color: black;
+}
+
+.white-text{
+    color: white;
 }
 
 /* seccion Hero */
@@ -73,6 +98,110 @@ h1 {
     text-align: center;   
 }
 
+/*experience */
+
+.experience{
+    padding: 40px 40px 60px 40px;
+}
+
+.experience .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experience .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.experience i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+
+.experience-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-vessel{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+/* projects*/
+
+.recent-projects{
+    padding: 40px;
+}
+
+.recent-projects img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.project-vessel{
+    padding: 60px;
+    margin-bottom: 10px;
+}
+
+.overlay{
+    transition: all 0.2s ease ;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.project{
+    position: relative;
+}
+
+.project:hover img {
+    opacity: 0.2;
+    scale: 1.1;
+}
+
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .icon-vessel{
+    display: flex;
+}
+
+.overlay i {
+    color: white;
+    font-size: 60px;
+    margin: 10px;
+}
 
 /* icono responsivo */
 
@@ -88,3 +217,13 @@ h1 {
 
     }
 }
+
+@media screen and (max-width:400px) {
+    .overlay p {
+        font-size: 18px;
+    }  
+
+    .overlay i{
+        font-size: 40px;
+    }
+}  
